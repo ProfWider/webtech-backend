@@ -4,17 +4,9 @@ plugins {
 	id 'java'
 }
 
-jar {
-	manifest {
-		attributes(
-				'Main-Class': 'htw.berlin.m1.M1Application'
-		)
-	}
-}
-
 group = 'htw.berlin'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '16'
 
 repositories {
 	mavenCentral()
