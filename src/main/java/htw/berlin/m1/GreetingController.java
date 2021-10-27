@@ -20,14 +20,14 @@ public class GreetingController {
         return "greeting";
     }
 
-    @GetMapping("/queryparam")
-    public String queryparam(
-            @RequestParam(name="envar", required=false) String envar,
-            Model model) {
-        String enval = Optional.ofNullable(env.getProperty(envar)).orElse("Environment variable not found");
-        model.addAttribute("attr", enval);
-        return "greeting";
-    }
+//    @GetMapping("/queryparam")
+//    public String queryparam(
+//            @RequestParam(name="envar", required=false) String envar,
+//            Model model) {
+//        String enval = Optional.ofNullable(env.getProperty(envar)).orElse("Environment variable not found");
+//        model.addAttribute("attr", enval);
+//        return "greeting";
+//    }
     @GetMapping("/path/param/{name}/{par2}")
     public String pathparam(
             @PathVariable(name="name") String name,
