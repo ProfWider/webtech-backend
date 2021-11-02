@@ -28,6 +28,7 @@ public class GreetingController {
 //        model.addAttribute("attr", enval);
 //        return "greeting";
 //    }
+
     @GetMapping("/path/param/{name}/{par2}")
     public String pathparam(
             @PathVariable(name="name") String name,
