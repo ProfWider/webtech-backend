@@ -1,6 +1,5 @@
 package htw.berlin.m2;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,5 +19,4 @@ public class ThingController {
         Long thingId = Long.parseLong(id);
         return service.get(thingId);
     }
-
 }

@@ -1,4 +1,4 @@
-package htw.berlin.m1;
+package htw.berlin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
