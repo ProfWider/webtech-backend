@@ -26,7 +26,7 @@ public class ThingControllerTest {
     private ThingService service;
 
     @Test
-    public void greetingShouldReturnMessageFromService() throws Exception {
+    public void testGetRoute() throws Exception {
         //Test Daten und Service Mock
         Thing t1 = new Thing("Lineal", 99);
         t1.setId(42L);
@@ -42,3 +42,5 @@ public class ThingControllerTest {
                 .andExpect(content().string(containsString(expected)));
     }
 }
+
+

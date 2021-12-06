@@ -35,3 +35,5 @@ public class ThingServiceTest {
         assertEquals(actual.getPrice(), 99);
     }
 }
+
+
