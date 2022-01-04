@@ -14,7 +14,7 @@ public class ThingController {
 
     @GetMapping("/things")
     public List<Thing> getAllThings(@RequestParam("owner") String owner) {
-        return service.getAllOwnedBy(owner);
+        return owner.equals("undefined") ? service.getAllWithoutOwner() : service.getAllOwnedBy(owner);
     }
 
     @PostMapping("/things")

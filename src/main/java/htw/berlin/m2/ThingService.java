@@ -20,10 +20,10 @@ public class ThingService {
         return repo.findById(id).orElseThrow(() -> new RuntimeException());
     }
 
-    public List<Thing> getAll() {
+    public List<Thing> getAllWithoutOwner() {
         Iterable<Thing> iterator = repo.findAll();
         List<Thing> things = new ArrayList<Thing>();
-        for (Thing thing : iterator) things.add(thing);
+        for (Thing thing : iterator) if(thing.getOwner()==null) things.add(thing);
         return things;
     }
 
