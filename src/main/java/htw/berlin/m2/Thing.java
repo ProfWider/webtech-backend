@@ -13,12 +13,14 @@ public class Thing {
     private Long id;
     private String name;
     private int price;
+    private String owner;
 
     public Thing() {}
 
-    public Thing(String name, int price) {
+    public Thing(String name, int price, String owner) {
         this.name = name;
         this.price = price;
+        this.owner = owner;
     }
 
     public Long getId() {
@@ -43,6 +45,14 @@ public class Thing {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
     }
 
     @Override

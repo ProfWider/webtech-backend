@@ -13,8 +13,8 @@ public class ThingController {
     Logger logger = LoggerFactory.getLogger(ThingController.class);
 
     @GetMapping("/things")
-    public List<Thing> getAllThings() {
-        return service.getAll();
+    public List<Thing> getAllThings(@RequestParam("owner") String owner) {
+        return service.getAllOwnedBy(owner);
     }
 
     @PostMapping("/things")

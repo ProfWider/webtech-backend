@@ -10,10 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
         void testToString() {
             //Eingabedaten
             String name = "Ding";
+            String owner = "wider@htw-berlin.de";
             int price = 99;
 
             //"System under test" aufsetzen
-            Thing thing = new Thing(name, price);
+            Thing thing = new Thing(name, price, owner);
             thing.setId(42L);
 
             //Erwartetes Ergebnis
