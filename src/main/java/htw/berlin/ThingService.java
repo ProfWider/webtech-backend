@@ -1,4 +1,4 @@
-package htw.berlin.m2;
+package htw.berlin;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

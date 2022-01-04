@@ -1,5 +1,6 @@
-package htw.berlin.m2;
+package htw.berlin;
 
+import htw.berlin.Thing;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

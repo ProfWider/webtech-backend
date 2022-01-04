@@ -1,4 +1,4 @@
-package htw.berlin.m2;
+package htw.berlin;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

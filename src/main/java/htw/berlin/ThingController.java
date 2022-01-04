@@ -1,4 +1,4 @@
-package htw.berlin.m2;
+package htw.berlin;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

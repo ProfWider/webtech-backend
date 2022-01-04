@@ -1,4 +1,4 @@
-package htw.berlin.m2;
+package htw.berlin;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

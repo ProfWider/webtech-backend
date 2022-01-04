@@ -1,13 +1,14 @@
-package htw.berlin.m2;
+package htw.berlin;
 
-import org.junit.jupiter.api.Assertions;
+import htw.berlin.Thing;
+import htw.berlin.ThingRepository;
+import htw.berlin.ThingService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
-import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
