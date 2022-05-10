@@ -10,6 +10,9 @@ import java.util.List;
 @RestController
 public class ThingController {
 
+    @Autowired
+    ThingService service;
+
     Logger logger = LoggerFactory.getLogger(ThingController.class);
 
     @GetMapping("/things")
@@ -28,9 +31,6 @@ public class ThingController {
         Long thingId = Long.parseLong(id);
         return service.get(thingId);
     }
-
-    @Autowired
-    ThingService service;
 
 }
 
