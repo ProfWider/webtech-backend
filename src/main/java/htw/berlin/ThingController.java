@@ -15,9 +15,6 @@ public class ThingController {
 
     Logger logger = LoggerFactory.getLogger(ThingController.class);
 
-    @Autowired
-    ThingService service;
-
     @GetMapping("/things")
     public List<Thing> getAllThings(@RequestParam("owner") String owner) {
         return owner.equals("undefined") ? service.getAllWithoutOwner() : service.getAllOwnedBy(owner);

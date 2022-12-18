@@ -1,4 +1,4 @@
-package htw.berlin;
+package htw.berlin.m2;
 
 import htw.berlin.Thing;
 import htw.berlin.ThingRepository;
