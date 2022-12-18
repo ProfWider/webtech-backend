@@ -20,7 +20,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security:2.6.7'
 	implementation 'com.okta.spring:okta-spring-boot-starter:2.1.5'
 	//runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
-	runtimeOnly 'org.postgresql:postgresql:42.3.1'
+	//runtimeOnly 'org.postgresql:postgresql:42.3.1'
+	runtimeOnly 'com.h2database:h2:2.1.214'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.7'
 	testImplementation 'com.h2database:h2:1.4.200'
 }
